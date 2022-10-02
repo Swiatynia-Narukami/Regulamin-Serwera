@@ -1,24 +1,38 @@
-<!DOCTYPE html>
-<html lang="pl">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <script src="skrypt.js"></script>
     <link rel="stylesheet" href="styl.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bezpieczeństwo w sieci</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <li class="navbarShow"><a class="navbarShowButton" onclick="toggleNavbar()">schowaj pasek</a></li>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">Świątynia Narukami</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="https://swiatynia-narukami.github.io/Regulamin-Serwera/regulamin.html">Regulamin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="https://swiatynia-narukami.github.io/Regulamin-Serwera/bezpieczenstwo.html">Bezpieczeństwo w sieci</a>
+              </li>
 
-    <ul class="navbar">
-        <li> <a class="left" href="https://swiatynia-narukami.github.io/Regulamin-Serwera/regulamin.html">Regulamin serwera</a> </li>
-        <li> <a class="aktywny left" href="https://swiatynia-narukami.github.io/Regulamin-Serwera/bezpieczenstwo.html">Podstawowe zasady bezpieczeństwa internetu </a> </li>
-
-    </ul>
-    <div class="text">
+          </div>
+        </div>
+      </nav>
+      <div class="text">
         <h1> Podstawowe informacje dotyczące bezpieczeństwa w internecie </h1>
         <br>
         <br>
@@ -68,7 +82,7 @@
         <br>Poinformuj zaufaną osobę dorosłą oraz administrację serwera o sytuacji. Osoby te będą wiedzieć jak najlepiej
         pomóc ci z sytuacją i do jakich służb się zwrócić.
         <br>Pomyśl o potencjalnej terapii i przepracowaniu traumy związanej z sytuacją
-    </div>
+      </div>
 </body>
 
 </html>
