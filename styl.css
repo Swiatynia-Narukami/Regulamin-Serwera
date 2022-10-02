@@ -5,12 +5,29 @@ body {
     color: white !important;
     display: grid;
 }
+.bg {
+    width: 1920px;
+    height: 1080px;
+    background-image: url(kocham\ yae\ miko.png);
+    background-repeat: no-repeat;
+    position: fixed;
+    filter: brightness(50%);
+    z-index: -9;
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 5px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}
 
 .navbar {
     background-image: linear-gradient(#333333, #333333);
     position: fixed !important;
     top: 0 !important;
     width: 100vw;
+    z-index: 99;
 }
 
 .active {
@@ -26,8 +43,9 @@ a:hover {
 }
 
 .text {
-    width: 70vw;
+    width: 80vw;
     text-align: center;
     justify-self: center;
     margin-top: 70px;    
+    margin-bottom: 20px;
 }
