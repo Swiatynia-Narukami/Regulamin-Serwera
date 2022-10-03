@@ -1,0 +1,49 @@
+.all {
+    justify-content: center;
+    display: grid;
+    background-color: red;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -9;
+    filter: brightness(40%);
+}
+
+@media only screen and (max-width: 1250px) {
+    .bg {
+        width: 1240px;
+    }
+
+}
+
+.content {
+    color: white;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    place-content: center;
+    gap: 2rem;
+    padding-bottom: 50px;
+}
+
+.box {
+    width: 40vw;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px){
+    .content{
+        grid-template-columns: 100vw;
+        align-content: center;
+    }
+    .box {
+        width: 100vw;
+        justify-self: center;
+        
+    }
+} 
