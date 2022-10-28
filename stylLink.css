@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 200% !important;
+}
+
+.bgImg {
+    position: fixed;
+    top: 0;
+    z-index: -99;
+    height: 100vh;
+    width: 100vw;
+    filter: brightness(30%);
+    transform: scale(1.1);
+}
+
+
+.content {
+    row-gap: 50px;
+    width: 95vw;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 50% 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 2.5vw;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    color: white;
+    font-family: montserrat;
+}
+
+.linkBox {
+    border: 4px solid;
+    border-image-slice: 1;
+    text-align: center;
+    width: 90%;
+    font-size: 20px;
+    padding: 30px;
+    position: relative;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.linkBox:hover {
+    filter: brightness(130%);
+}
+
+.boxImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    filter: brightness(30%);
+}
+#daily {
+    border-image-source: linear-gradient(-55deg, hsl(204, 83%, 54%), hsl(205, 36%, 48%)) !important;
+}
+
+#mapa {
+    border-image-source: linear-gradient(-55deg, hsl(133, 100%, 30%), hsl(133, 100%, 70%)) !important;    
+}
+
+#paimonmoe {
+    border-image-source: linear-gradient(-55deg, hsl(233, 33%, 26%), hsl(233, 33%, 49%)) !important;
+}
+
+#fandom {
+    border-image-source: linear-gradient(-55deg, hsl(40, 66%, 68%), hsl(41, 98%, 81%)) !important;
+}
+
+#genshingg {
+    border-image-source: linear-gradient(-55deg, hsl(235, 44%, 22%), hsl(235, 44%, 43%)) !important;
+}
+
+#honeyimpact {
+    border-image-source: linear-gradient(-55deg, hsl(0, 0%, 7%), hsl(0, 0%, 36%)) !important;
+}
+
+#enkanetwork {
+    border-image-source: linear-gradient(-55deg, hsl(207, 26%, 36%), hsl(207, 40%, 60%)) !important;
+}
+
+#spiralabyss {
+    border-image-source: linear-gradient(-55deg, hsl(232, 37%, 19%), hsl(232, 38%, 41%)) !important;
+
+}
+@media only screen and (max-width: 1200px) {
+    .content {
+        margin-left: 2.5vw;
+        text-align: center !important;
+    }
+    .boxImg {
+        display: none;
+    }
+    .linkBox {
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 10px;
+    }
+    .bgImg {
+        width: 1200px;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .content {
+        grid-template-columns: 95vw;
+    }
+}

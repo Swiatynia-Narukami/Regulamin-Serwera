@@ -1,140 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
 
 <head>
-  <script src="dendroCuli.js"></script>
-
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="regulamin.css">
-  <link rel="stylesheet" href="navbar.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Regulamin</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="grafiki/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulamin serwera</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand">Świątynia Narukami</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page"
-              href="https://swiatynia-narukami.github.io/Regulamin-Serwera/regulamin.html">Regulamin</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"
-              href="https://swiatynia-narukami.github.io/Regulamin-Serwera/bezpieczenstwo.html">Bezpieczeństwo w
-              sieci</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://swiatynia-narukami.github.io/Regulamin-Serwera/opisLinkow.html">Przydatne
-              linki genshin</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Lokacje
-              Oculusów</a>
-            <ul class="dropdown-menu">
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/szxjlqO44n8">Anemo</a></li>
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/EzuFppgD53U">Geo</a></li>
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/whiZapYGeFw">Electro</a></li>
-              <li><a target="_blank" class="dropdown-item" onclick="dendroTutorials()">Dendro</a></li>
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/-leuBnSo1R8">Lumenspear</a></li>
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/z_Ga8E1fxj0">Crimson Agate</a></li>
-            </ul>
-          </li>
 
-      </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Świątynia Narukami</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                            href="https://swiatynia-narukami.github.io/Regulamin-Serwera/regulamin.html"
+                            aria-current="page">Regulamin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://swiatynia-narukami.github.io/Regulamin-Serwera/bezpieczenstwo.html">Bezpieczeństwo
+                            w sieci</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://swiatynia-narukami.github.io/Regulamin-Serwera/opisLinkow.html">Przydatne linki Genshin</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Lokacje Oculusów
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/szxjlqO44n8">Anemo
+                                    Oculi</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/EzuFppgD53U">Geo
+                                    Oculi</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/whiZapYGeFw">Electro
+                                    Oculi</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/CEma4t4UQBI">Dendro
+                                    Oculi cz.1</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/dIeUERUXBTw">Dendro
+                                    Oculi cz.2</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/z_Ga8E1fxj0">Crimson
+                                    Agate</a></li>
+                            <li><a target="_blank" class="dropdown-item"
+                                    href="https://youtu.be/-leuBnSo1R8">Lumenspear</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>Regulamin</h1>
+         
+        <h2>Postanowienia ogólne</h2>
+         
+         Nieprzestrzeganie regulaminu serwera wiąże się z ukaraniem przez administracje 
+         Administracja zastrzega sobie prawo do zmieniania treści regulaminu 
+         
+        <h2>Zasady kanałów tekstowych</h2>
+         
+         Na serwerze zakazany jest wszelkiego rodzaju spam w kanałach do tego nie przeznaczonych oraz spam pingami 
+         Nie prowokujemy kłótni, nie podejmujemy drażliwych tematów oraz dyskusji które mogą urażać swoją naturą lub
+            treścią 
+         Żarty zatrzymujemy fw granicach dobrego smaku i z uszanowaniem do siebie nawzajem 
+         Reklamowanie jakichkolwiek serwerów zewnętrznych: gier, stron www, serwerów discord itp. Jest zakazane.
+            Dotyczy to również customowych napisów 
+         Zakaz wykorzystywania możliwych błędów na serwerze. Należy je zgłaszać administracji na bieżąco 
+         Zabronione jest wysyłanie na kanałach jakichkolwiek treści rodzaju pornograficznego/gore/snuff 
+         Kanałów używamy do odpowiednich treści, np. #genshin-chat używamy do rozmowy o tytułowej grze, na
+            multimediach dodajemy tylko multimedia. Na #main-chat dozwolone jest używanie multimediów, natomiast
+            zabrania się przesadzania ilościowego 
+         Słuchamy się adminów, mają oni prawo zwracać uwagę i dawać ostrzeżenie jeżeli uważają dane zachowanie za
+            nieodpowiednie 
+         Kategorycznie zabraniamy rozpowszechniania danych osobowych oraz treści typu doxx 
+         Serwer prowadzony jest zgodnie z polityką firmy MiHoYo, co się z tym wiąże na serwerze zakazane jest
+            wymienianie oraz sprzedaż kont 
+         Kanał “przedstaw_się” służy od przedstawiana się, a NIE od trollowania i zbędnego zmyślania, jeżeli nie masz
+            ochoty pisać o sobie prawdy, to nie pisz w ogól 
+         Administracja przypomina o utrzymaniu żartów w granicach taktu, co się z tym wiąże wszelkiego rodzaju
+            trolling i celowe prowokowanie jest zabronione, w przypadku wątpliwości polecamy zajrzenie do artykuł <a
+                href="https://pl.wikipedia.org/wiki/Netykieta">“netykieta” na stronie wikipedii</a> 
+         
+        <h2>Zasady kanałów głosowych</h2>
+         
+         Komendy botów należy wykonywać wyłącznie na kanale do tego wyznaczonym 
+         Administracja prosi o utrzymywanie kultury dyskusji (nie używamy słowa na k co drugie zdanie) 
+         Zakazuje się nękania, poniżania, grożenia oraz wymuszania 
+         Zakazane jest tzw. krzyczenie do mikrofonu, mocne podnoszenie głosu 
+         Wszystkie zasady kanałów tekstowych obowiązują także w głosowych 
+         
+        <h2>Zasady odnoszące się do personalizacji</h2>
+         
+         Kategoryczny zakaz awatarów, profilowych oraz banerów z treściami pornograficznymi/gore/snuff 
+         Zakazane jest ustawianie obraźliwych, seksistowskich oraz rasistowskich nicków 
+         Administracja przypomina aby nie reklamować się w nickach, ani opisach 
+         Właściciel serwera (Gerwi#0032) przypomina, że rangi nie są nagrodą, ani czymś co można wybłagać, lecz
+            roląktóra ma na celu zaznaczyć użytkowników którzy aktywnie pracują nad serwerem i są powołani do danych ról
+            naserwerze. Prosiłby więc o odnoszenie się do administracji z szacunkiem, oraz nie proszenia/błagania
+            oprzyznawanie danych ról typu admin/moderator. 
+         Akceptacja regulaminu jest jednoznaczna z założeniem że dany użytkownik się z nim zapoznał, nieznajomość
+         regulaminu nie zwalnia z jego przestrzegania.  
     </div>
-  </nav>
-  <div class="text">
-    <h1>Regulamin</h1>
-    <h2>1 Postanowienia ogólne</h2>
-    <br>
-    <br> Nieprzestrzeganie regulaminu serwera wiąże się z ukaraniem przez administracje
-    <br>
-    <br> Administracja zastrzega sobie prawo do zmieniania treści regulaminu
-    <br>
-    <br>
-    <h2>2 Zasady kanałów tekstowych</h2>
-    <br>
-    <br> Na serwerze zakazany jest wszelkiego rodzaju spam w kanałach do tego nie przeznaczonych oraz spam pingami
-    <br>
-    <br> Nie prowokujemy kłótni, nie podejmujemy drażliwych tematów oraz dyskusji które mogą urażać swoją naturą lub
-    treścią
-    <br>
-    <br> Żarty zatrzymujemy w granicach dobrego smaku i z uszanowaniem do siebie nawzajem
-    <br>
-    <br> Reklamowanie jakichkolwiek serwerów zewnętrznych: gier, stron www, serwerów discord itp. Jest zakazane.
-    Dotyczy to również customowych napisów
-    <br>
-    <br> Zakaz wykorzystywania możliwych błędów na serwerze. Należy je zgłaszać administracji na bieżąco
-    <br>
-    <br> Zabronione jest wysyłanie na kanałach jakichkolwiek treści rodzaju pornograficznego/gore/snuff
-    <br>
-    <br> Kanałów używamy do odpowiednich treści, np. <a class="linkText" target="_blank"
-      href="https://discord.com/channels/929086991495225344/929091181684609066">#genshin-chat</a> używamy do
-    rozmowy o tytułowej grze, na
-    multimediach dodajemy tylko multimedia. Na #main-chat dozwolone jest używanie multimediów, natomiast zabrania
-    się przesadzania ilościowego
-    <br>
-    <br> Słuchamy się adminów, mają oni prawo zwracać uwagę i dawać ostrzeżenie jeżeli uważają dane zachowanie za
-    nieodpowiednie
-    <br>
-    <br> Kategorycznie zabraniamy rozpowszechniania danych osobowych oraz treści typu doxx
-    <br>
-    <br> Serwer prowadzony jest zgodnie z polityką firmy MiHoYo, co się z tym wiąże na serwerze zakazane jest
-    wymienianie oraz sprzedaż kont
-    <br>
-    <br> Kanał “przedstaw_się” służy od przedstawiana się, a NIE od trollowania i zbędnego zmyślania, jeżeli nie
-    masz ochoty pisać o sobie prawdy, to nie pisz w ogóle
-    <br>
-    <br> Administracja przypomina o utrzymaniu żartów w granicach taktu, co się z tym wiąże wszelkiego rodzaju
-    trolling i celowe prowokowanie jest zabronione, w przypadku wątpliwości polecamy zajrzenie do artykułu
-    “netykieta” na stronie wikipedii: <a class="linkText" target="_blank"
-      href="https://pl.wikipedia.org/wiki/Netykieta">https://pl.wikipedia.org/wiki/Netykieta</a>
-    <br>
-    <br>
-    <h2>3 Zasady kanałów głosowych</h2>
-    <br>
-    <br> Komendy botów należy wykonywać wyłącznie na kanale do tego wyznaczonym
-    <br>
-    <br> Administracja prosi o utrzymywanie kultury dyskusji (nie używamy słowa na k co drugie zdanie)
-    <br>
-    <br> Zakazuje się nękania, poniżania, grożenia oraz wymuszania
-    <br>
-    <br> Zakazane jest tzw. krzyczenie do mikrofonu, mocne podnoszenie głosu
-    <br>
-    <br> Wszystkie zasady kanałów tekstowych obowiązują także w głosowych
-    <br>
-    <br>
-    <h2>4 Zasady odnoszące się do personalizacji</h2>
-    <br>
-    <br> Kategoryczny zakaz awatarów, profilowych oraz banerów z treściami pornograficznymi/gore/snuff
-    <br>
-    <br> Zakazane jest ustawianie obraźliwych, seksistowskich oraz rasistowskich nicków
-    <br>
-    <br> Administracja przypomina aby nie reklamować się w nickach, ani opisach
-    <br>
-    <br>Właściciel serwera (Gerwi#0032) przypomina, że rangi nie są nagrodą, ani czymś co można wybłagać, lecz rolą
-    która ma na celu zaznaczyć użytkowników którzy aktywnie pracują nad serwerem i są powołani do danych ról na
-    serwerze. Prosiłby więc o odnoszenie się do administracji z szacunkiem, oraz nie proszenia/błagania o
-    przyznawanie danych ról typu admin/moderator.
-    <br>
-    <br>Akceptacja regulaminu jest jednoznaczna z założeniem że dany użytkownik się z nim zapoznał, nieznajomość
-    regulaminu nie zwalnia z jego przestrzegania.
-  </div>
-  <img class="bg" src="kocham yae miko.png" alt="">
 
+    <img class="bgImg" src="grafiki/kocham yae miko.png">
 </body>
 
 </html>

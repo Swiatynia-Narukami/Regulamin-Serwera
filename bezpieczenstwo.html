@@ -1,125 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
 
 <head>
-  <script src="dendroCuli.js"></script>
-
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" href="regulamin.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bezpieczeństwo w internecie</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="grafiki/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bezpieczeństwo w sieci</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand">Świątynia Narukami</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page"
-              href="https://swiatynia-narukami.github.io/Regulamin-Serwera/regulamin.html">Regulamin</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active"
-              href="https://swiatynia-narukami.github.io/Regulamin-Serwera/bezpieczenstwo.html">Bezpieczeństwo w
-              sieci</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"
-              href="https://swiatynia-narukami.github.io/Regulamin-Serwera/opisLinkow.html">Przydatne linki genshin</a>
-          </li>
-   
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Lokacje Oculusów</a>
-            <ul class="dropdown-menu">
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/szxjlqO44n8">Anemo</a></li>
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/EzuFppgD53U">Geo</a></li>
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/whiZapYGeFw">Electro</a></li>
-              <li><a target="_blank" class="dropdown-item" onclick="dendroTutorials()">Dendro</a></li>
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/-leuBnSo1R8">Lumenspear</a></li>
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/z_Ga8E1fxj0">Crimson Agate</a></li>
-            </ul>
-          </li>
-
-      </div>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Świątynia Narukami</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://swiatynia-narukami.github.io/Regulamin-Serwera/regulamin.html" aria-current="page">Regulamin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://swiatynia-narukami.github.io/Regulamin-Serwera/bezpieczenstwo.html">Bezpieczeństwo
+                            w sieci</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://swiatynia-narukami.github.io/Regulamin-Serwera/opisLinkow.html">Przydatne linki Genshin</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Lokacje Oculusów
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/szxjlqO44n8">Anemo Oculi</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/EzuFppgD53U">Geo Oculi</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/whiZapYGeFw">Electro Oculi</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/CEma4t4UQBI">Dendro Oculi cz.1</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/dIeUERUXBTw">Dendro Oculi cz.2</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/z_Ga8E1fxj0">Crimson Agate</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/-leuBnSo1R8">Lumenspear</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>Bezpieczeństwo w sieci</h1>
+        <h2>Wstęp</h2>
+        <p>Tutaj wypisalismy parę ważnych zasad bezpieczeństwa w internecie, nie musisz tego czytać, ale by ci się to przydało jeżeli nie wiele na ten temat wiesz.</p>
+        <h2>Odpowiedzialne szyfrowanie danych</h2>
+        <p>Pamiętajmy aby nie dzielić się z nikim obcym, niezależnie od stwarzanych pozorów, naszymi hasłami, danymi osobowymi, miejscem zamieszkania lub szkolnictwa. Nasze hasło powinno być złożone z liter, cyfr i najlepiej znaków specjalnych (takich jak !@#$%) niezwiązane z nickiem, aby było trudniejsze do odgadnięcia.</p>
+        <p>Zabezpieczenie urządzeń przed szkodliwym oprogramowaniem - na serwerze surowo zabronione jest wysyłanie linków do stron z wszelkiego rodzaju nielegalnie udostępnianymi grami, piraconej muzyki lub filmów ze względu na ogromną ilość wirusów rojących się na tego rodzaju serwisach, pamiętajmy również o nie logowaniu się w wysłane nam przez innych użytkowników linki, gdyż w większości przypadków są to wirusy, podejmujmy także kroki potrzebne do zabezpieczenia się w sieci (na przykład wiemy, że nikt z discorda albo innej platformy nie poprosi o twoje hasło.</p>
+        <p>Tak samo jak i znamy domeny prawdziwej strony (np. discord.com a nie dlscord.com))</p>
+        <p>Kłódka przy adresie strony nie oznacza, że jest bezpieczna!</p>
+        <p><a href="https://nordvpn.com/pl/blog/http-a-https-roznice/">Kłódka oznacza, że strona używa https, a jej brak bądź przekreślona, że używa ona http.</a></p>
+        <h2>Nie działaj pod wpływem emocji</h2>
+        <p>W Internecie możemy się spotkać z wszelkiego rodzaju próbami zastraszania oraz szantażu, w przypadku gdyby do tego doszło, starajmy się działać z opanowaniem, pod żadnym względem nie ulegając takim działaniom, najlepiej powiadamiając o sprawie zaufaną osobę dorosłą oraz administrację serwera.</p>
+        <h2>Używaj oryginalnego oprogramowania</h2>
+        <p>Tylko legalnie działające oprogramowanie jest bieżąco udoskonalane przez producentów i możliwe jest jego uaktualnianie do nowszych wersji. Dzięki temu mogą być usuwane luki w bezpieczeństwie, które umożliwiają hakerom przeprowadzanie niebezpiecznych ataków, miejmy to na uwadze pobierając np. launchery do gier.</p>
+        <p>Korzystaj z silnych haseł, różnych do każdego innego serwisu. Ze względu na wycieki danych radzimy sprawdzać co jakiś czas, czy twoje dane wystąpiły w pewnym wycieku <a target="_blank" href="https://haveibeenpwned.com/">Polecamy do tego tą stronę.</a></p>
+        <h2>Wykorzystywanie w internecie i jak sobie z tym poradzić?</h2>
+        <p>Znajmy granicę tego, co jest taktowne, zarówno jak i tolerowane na nasz wiek, w rozmowach internetowych sugerujmy się przede wszystkim naszym własnym komfortem. Jeśli rozmowa zaczyna przekraczać nasze granice, szybko ją zakończmy.</p>
+        <p>Nie bójmy się osądzeń, odrzucenia, czy kary, musimy być świadomi tego, że to co nas spotyka nie jest naszą winą czy złą wolą, lecz prześladowczym zachowaniem osoby po drugiej stronie komputera, proszenie o pomoc nie powinno być czymś krępującym, a dowodem naszej odwagi odnośnie przejęcia kontroli nad sytuacją.</p>
+        <p>Poinformuj zaufaną osobę dorosłą lub administrację serwera (jeżeli sprawa się go dotyczy) o sytuacji jak taką napotkasz. Osoby te będą wiedzieć jak najlepiej pomóc ci z sytuacją i do jakich służb się zwrócić. </p>dorosłą lub administrację serwera (jeżeli sprawa się go dotyczy) o sytuacji jak taką napotkasz. Osoby te będą wiedzieć jak najlepiej pomóc ci z sytuacją i do jakich służb się zwrócić. 
     </div>
-  </nav>
-  <div class="text">
-    <h1> Podstawowe informacje dotyczące bezpieczeństwa w internecie </h1>
-    <br>
-    <br>
-    <h2>Wstęp</h2>
-    <br>Tutaj wypisalismy parę ważnych zasad bezpieczeństwa w internecie, nie musisz tego czytać, ale by ci się to
-    przydało jeżeli nie wiele na ten temat wiesz.
-    <br>
-    <br>
 
-    <h2>Odpowiedzialne szyfrowanie danych</h2>
-    <br>
-    <br>Pamiętajmy aby nie dzielić się z nikim obcym, niezależnie od stwarzanych pozorów, naszymi hasłami, danymi
-    osobowymi, miejscem zamieszkania lub szkolnictwa. Nasze hasło powinno być złożone z liter, cyfr i najlepiej znaków
-    specjalnych (takich jak !@#$%) niezwiązane z
-    nickiem, aby było trudniejsze do odgadnięcia.
-    <br>
-    <br>Zabezpieczenie urządzeń przed szkodliwym oprogramowaniem - na serwerze surowo zabronione jest wysyłanie
-    linków do stron z wszelkiego rodzaju nielegalnie udostępnianymi grami, piraconej muzyki lub filmów ze względu na
-    ogromną ilość wirusów rojących się na tego rodzaju serwisach, pamiętajmy również o nie logowaniu się w wysłane
-    nam przez innych użytkowników linki, gdyż w większości przypadków są to wirusy, podejmujmy także kroki potrzebne
-    do zabezpieczenia się w sieci (na przykład wiemy, że nikt z discorda albo innej platformy nie poprosi o twoje hasło.
-    <br> Tak samo jak i znamy domeny prawdziwej strony (np. discord.com a nie dlscord.com))
-    <br> Kłódka przy adresie strony nie oznacza, że jest bezpieczna!
-    <br><a target="_blank" href="https://nordvpn.com/pl/blog/http-a-https-roznice/">Kłódka oznacza, że strona używa
-      https, a jej brak bądź przekreślona, że używa ona http.</a>
-    <br>
-    <br>
-    <h2>Nie działaj pod wpływem emocji</h2>
-    <br>
-    <br>W Internecie możemy się spotkać z wszelkiego rodzaju próbami zastraszania oraz szantażu, w przypadku gdyby
-    do tego doszło, starajmy się działać z opanowaniem, pod żadnym względem nie ulegając takim działaniom, najlepiej
-    powiadamiając o sprawie zaufaną osobę dorosłą oraz administrację serwera.
-    <br>
-    <br>
-    <h2>Używaj oryginalnego oprogramowania</h2>
-    <br>
-    <br>Tylko legalnie działające oprogramowanie jest bieżąco udoskonalane przez producentów i możliwe jest jego
-    uaktualnianie do nowszych wersji. Dzięki temu mogą być usuwane luki w bezpieczeństwie, które umożliwiają hakerom
-    przeprowadzanie niebezpiecznych ataków, miejmy to na uwadze pobierając np. launchery do gier.
-    <br>
-    <!-- <br>Korzystaj z różnych adresów mailowych ze względu na częste wycieki danych i ryzyko przejęcia poufnych danych
-        na serwisach, powinniśmy korzystać z różnych adresów mailowych aby zróżnicować nasze dane rejestracyjne na
-        serwisach z których korzystamy. Pamiętajmy o nielogowaniu się na niezabezpieczone strony z naszego głównego
-        konta. -->
-    <br>Korzystaj z silnych haseł, różnych do każdego innego serwisu. Ze względu na wycieki danych radzimy sprawdzać co
-    jakiś czas, czy twoje dane wystąpiły w pewnym wycieku ( <a target="_blank"
-      href="https://haveibeenpwned.com/">Polecamy do tego tą stronę.</a> )
-    <br>
-    <br>
-    <h2>Wykorzystywanie w internecie i jak sobie z tym poradzić?</h2>
-    <br>
-    <br>Znajmy granicę tego, co jest taktowne, zarówno jak i tolerowane na nasz wiek, w rozmowach internetowych
-    sugerujmy się przede wszystkim naszym własnym komfortem. Jeśli rozmowa zaczyna przekraczać nasze granice, szybko
-    ją zakończmy.
-    <br>Nie bójmy się osądzeń, odrzucenia, czy kary, musimy być świadomi tego, że to co nas spotyka nie jest naszą
-    winą czy złą wolą, lecz prześladowczym zachowaniem osoby po drugiej stronie komputera, proszenie o pomoc nie
-    powinno być czymś krępującym, a dowodem naszej odwagi odnośnie przejęcia kontroli nad sytuacją.
-    <br>Poinformuj zaufaną osobę dorosłą lub administrację serwera (jeżeli sprawa się go dotyczy) o sytuacji jak taką
-    napotkasz. Osoby te będą wiedzieć jak najlepiej
-    pomóc ci z sytuacją i do jakich służb się zwrócić.
-  </div>
-  <img class="bg" src="kocham yae miko.png" alt="">
-
+    <img class="bgImg" src="grafiki/kocham yae miko.png">
 </body>
-
 </html>

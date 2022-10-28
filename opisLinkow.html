@@ -1,109 +1,103 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
-  <script src="dendroCuli.js"></script>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" href="opisyLinkow.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Opisy linków</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="stylLink.css">
+    <link rel="shortcut icon" href="grafiki/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przydatne linki</title>
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand">Świątynia Narukami</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page"
-              href="https://swiatynia-narukami.github.io/Regulamin-Serwera/regulamin.html">Regulamin</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"
-              href="https://swiatynia-narukami.github.io/Regulamin-Serwera/bezpieczenstwo.html">Bezpieczeństwo w
-              sieci</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page"
-              href="https://swiatynia-narukami.github.io/Regulamin-Serwera/opisLinkow.html">Przydatne linki Genshin</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Lokacje
-              Oculusów</a>
-            <ul class="dropdown-menu">
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/szxjlqO44n8">Anemo</a></li>
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/EzuFppgD53U">Geo</a></li>
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/whiZapYGeFw">Electro</a></li>
-              <li><a target="_blank" class="dropdown-item" onclick="dendroTutorials()">Dendro</a></li>
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/-leuBnSo1R8">Lumenspear</a></li>
-              <li><a target="_blank" class="dropdown-item" href="https://youtu.be/z_Ga8E1fxj0">Crimson Agate</a></li>
-            </ul>
-          </li>
-
-      </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Świątynia Narukami</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://swiatynia-narukami.github.io/Regulamin-Serwera/regulamin.html" aria-current="page">Regulamin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://swiatynia-narukami.github.io/Regulamin-Serwera/bezpieczenstwo.html">Bezpieczeństwo
+                            w sieci</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://swiatynia-narukami.github.io/Regulamin-Serwera/opisLinkow.html">Przydatne linki Genshin</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Lokacje Oculusów
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/szxjlqO44n8">Anemo Oculi</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/EzuFppgD53U">Geo Oculi</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/whiZapYGeFw">Electro Oculi</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/CEma4t4UQBI">Dendro Oculi cz.1</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/dIeUERUXBTw">Dendro Oculi cz.2</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/z_Ga8E1fxj0">Crimson Agate</a></li>
+                            <li><a target="_blank" class="dropdown-item" href="https://youtu.be/-leuBnSo1R8">Lumenspear</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div id="daily" onclick="window.open('https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481')" class="linkBox">
+            <img class="boxImg" src="grafiki/daily.png" alt="">
+            <h1>Daily login</h1>
+            <p>Oficjalna strona od daily loginu do genshina.
+                <br>Można odbierać to i z telefonu jak i z komputera.
+                <br>wygodne :D </p>
+            </div>
+        <div id="mapa" onclick="window.open('https://act.hoyolab.com/ys/app/interactive-map/index.html?lang=en-us#/map/')" class="linkBox">
+            <img class="boxImg" src="grafiki/mapa.png" alt="">
+            <h1>Interaktywna Mapa</h1>
+            <p>interaktywna mapa na której znajdziemy lokacje wszystkich skrzynek, anemo, geo oraz electroculusów a także lokalnych specjalności danych regionów i materiałów</p>
+        </div>
+        <div id="paimonmoe" onclick="window.open('https://paimon.moe')" class="linkBox">
+            <img class="boxImg" src="grafiki/paimonmoe.png" alt="">
+            <h1>Paimon.moe</h1>
+            <p>Wielofunkcyjna strona internetowa która pomoże wam między innymi obliczyć materiały potrzebne do ascendowania postaci/broni, sprawdzić obecne pity oraz pokaże jakie materiały są dostępne do farmienia na dany dzień </p>
+        </div>
+        <div id="fandom" onclick="window.open('https://genshin-impact.fandom.com/wiki/Genshin_Impact')" class="linkBox">
+            <img class="boxImg" src="grafiki/fandom.png" alt="">
+            <h1>Fandom</h1>
+            <p>Wikipedia w genshinowej odsłonie, na stronie znajdują się między innymi informacje o postaciach, w pełni odblokowane historie oraz voice line'y, a także zewnętrzne opisy postaci</p>
+        </div>
+        <div id="genshingg" onclick="window.open('https://genshin.gg')" class="linkBox">
+            <img class="boxImg" src="grafiki/genshingg.png" alt="">
+            <h1>Genshin.gg</h1>
+            <p>Na tej stronie znajdziecie tier listę obecnych w grze postaci, popularne buildy oraz pomysły na budowanie drużyn</p>
+        </div>
+        <div id="spiralabyss" onclick="window.open('https://spiralabyss.org/')" class="linkBox">
+            <img class="boxImg" src="grafiki/spiralabyss.png" alt="">
+            <h1>Spiral Abyss Analytics</h1>
+            <p>Niestety już nie aktualizowany poradnik do abyssa, najlepsze do niego drużyny i team builder. Może coś się z tąd jeszcze przydać.</p>
+        </div>
+        <div id="honeyimpact" onclick="window.open('https://genshin.honeyhunterworld.com/?lang=PL')" class="linkBox">
+            <img class="boxImg" src="grafiki/honeyimpact.png" alt="">
+            <h1>Honey Impact</h1>
+            <p>Strona na której znajdują się rozpiski potrzebnych materiałów do obecnych w grze jak i zapowiedzianych postaci, rozpiska skilli do zapowiedzianych jak i obecnych w grze postaci, kalendarz który wyświetla obecne w danym dniu do farmienia materiały wraz z postaciami które ich potrzebują, i wiele więcej </p>
+        </div>
+        <div id="enkanetwork" onclick="window.open('https://enka.network')" class="linkBox">
+            <img class="boxImg" src="grafiki/enkanetwork.png" alt="">
+            <h1>Enka.network</h1>
+            <p>Strona do generowania ładnych kart z postaciami. Zezwala na eksportowanie obrazu, własny obraz na tło i wiele więcej.</p>
+        </div>
     </div>
-  </nav>
-  <div class="content">
-    <div class="box">
-      <h1><a target="_blank"
-          href="https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481"> Daily
-          login</a></h1>
-      Oficjalna strona od daily loginu do genshina.
-      <br> Można odbierać to i z telefonu jak i z pc. <br> wygodne :D
-    </div>
-    <div class="box">
-      <h1> <a target="_blank"
-          href="https://act.hoyolab.com/ys/app/interactive-map/index.html?lang=en-us#/map/">Interaktywna Mapa</a>
-      </h1>
-      interaktywna mapa na której znajdziemy lokacje wszystkich skrzynek, anemo, geo oraz electroculusów a także
-      lokalnych specjalności danych regionów i materiałów potrzebnych do gotowania/ulepszania postaci
-    </div>
-    <div class="box">
-      <h1> <a target="_blank" href="https://paimon.moe">Paimon.moe</a></h1>
-      Wielofunkcyjna strona internetowa która pomoże wam między innymi obliczyć materiały potrzebne do ascendowania
-      postaci/broni, sprawdzić obecne pity oraz pokaże jakie materiały są dostępne do farmienia na dany dzień
-    </div>
-    <div class="box">
-      <h1><a target="_blank" href="https://genshin.gg/">Genshin.gg</a></h1>
-      Na tej stronie znajdziecie tier listę obecnych w grze postaci, popularne buildy oraz pomysły na budowanie drużyn
-    </div>
-    <div class="box">
-      <h1><a target="_blank" href="https://genshin-impact.fandom.com/wiki/Genshin_Impact">Fandom</a></h1>
-      Wikipedia w genshinowej odsłonie, na stronie znajdują się między innymi informacje o postaciach, w pełni
-      odblokowane historie oraz voice line'y, a także zewnętrzne opisy postaci
-    </div>
-    </h1>
-    <div class="box">
-      <h1><a target="_blank" href="https://spiralabyss.org/">Spiral Abyss Analytics</a></h1>
-      Na bieżąco aktualizowany guide do abyssa, w którym znajdziecie najlepsze drużyny, porady oraz team builder
-    </div>
-    <div class="box">
-      <h1><a target="_blank" href="https://genshin.honeyhunterworld.com/">Honey Impact</a></h1>
-      Strona na której znajdują się rozpiski potrzebnych materiałów do obecnych w grze jak i zapowiedzianych postaci,
-      rozpiska skilli do zapowiedzianych jak i obecnych w grze postaci, kalendarz który wyświetla obecne w danym dniu do
-      farmienia materiały wraz z postaciami które ich potrzebują, i wiele więcej
-    </div>
-    <div class="box">
-      <h1><a target="_blank" href="https://keqingmains.com/">KeqingMains</a></h1>
-      W pełni opisane buildy jak i taktyki na postacie, połączenia postaci. <br> forum do omawiania buildów i taktyk
-    </div>
-  </div>
-  <img class="bg" src="SacredSakura.png" alt="">
-
+    <img class="bgImg" src="grafiki/SacredSakura.png">
 </body>
-
 </html>

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 .navbar {
     background-image: linear-gradient(#333333, #333333);
     position: fixed !important;
@@ -14,6 +14,7 @@
 
 a {
     color: white !important;
+    transition: all 0.15s;
 }
 
 a:hover {
@@ -21,6 +22,10 @@ a:hover {
 }
 
 .dropdown-menu {
+    background-color: #333333 !important;
+}
+
+.dropdown-item:hover {
     background-color: #333333 !important;
 }
 
