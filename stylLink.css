@@ -25,31 +25,32 @@ h1 {
 
 
 .content {
+    column-gap: 2px;
+    margin-left: 2.4vw;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: space-evenly;
     row-gap: 50px;
     width: 95vw;
-    display: grid;
     place-items: center;
-    grid-template-columns: 50% 50%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 2.5vw;
-    margin-top: 70px;
-    margin-bottom: 30px;
     background-color: transparent;
     color: white;
     font-family: montserrat;
+    margin-bottom: 50px;
 }
 
 .linkBox {
     border: 4px solid;
     border-image-slice: 1;
     text-align: center;
-    width: 90%;
+    width: 45%;
     font-size: 20px;
     padding: 30px;
     position: relative;
-    transition: all 0.2s;
     cursor: pointer;
+    transition: 0.4s filter;
 }
 
 .linkBox:hover {
@@ -95,13 +96,15 @@ h1 {
 
 #spiralabyss {
     border-image-source: linear-gradient(-55deg, hsl(232, 37%, 19%), hsl(232, 38%, 41%)) !important;
-
 }
+
+#akasha {
+    border-image-source: linear-gradient(-55deg,hsl(180, 7%, 41%), hsl(180, 7%, 14%)) !important;
+}
+
+
+
 @media only screen and (max-width: 1200px) {
-    .content {
-        margin-left: 2.5vw;
-        text-align: center !important;
-    }
     .boxImg {
         display: none;
     }
@@ -115,8 +118,8 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 768px){
-    .content {
-        grid-template-columns: 95vw;
+@media only screen and (max-width: 768px) {
+    .linkBox {
+        width: 90%;
     }
 }
